@@ -1,22 +1,22 @@
 package main
 
-import "fmt"
+import format "fmt"
 
 func main() {
 
 	//integer literals
-	fmt.Println(
+	format.Println(
 		-1, 230, 55,
 	)
 
 	//float64 literals
-	fmt.Println(-.5, 1., 0.)
+	format.Println(-.5, 1., 0.)
 
 	//bool
-	fmt.Println(true, false)
+	format.Println(true, false)
 
 	//string literals
-	fmt.Println(
+	format.Println(
 		"",
 		"gyan",
 		"",
