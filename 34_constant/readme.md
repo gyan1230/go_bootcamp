@@ -47,4 +47,24 @@ Typeless / Untyped constant - it's type is kind
 		max = min * 3.2 // float64 type
 	)
 
+    NOTE : All basic literals are typeless - 3.2 and 1 in above
+
+5. Constant with a type can only be used with a value of same type
+
+    const xxx int = 1
+    var aaa int
+    var fff float
+
+    aaa = xxx   // possible due to same type
+    fff = xxx   // compile error due to different type
+
+    but
+
+    const yyy = 1
+
+    fff = yyy   //no error due to typeless
+
+
+
+
 
