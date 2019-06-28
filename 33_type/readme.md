@@ -16,7 +16,18 @@ GO is static type language
         Representation : true or false
         Size           : 1 byte
 
-3. Defined Type (AKA named type)
+3. overflow
+    eg :
+    int8(math.MaxInt8+1)    //compiler catch the error
+
+    so we need to use variable
+    var max int8 = math.MaxInt8
+
+    fmt.Println("max value",max)    //127
+    fmt.Println("max value",max+1)    //-128 - wrap around
+
+
+4. Defined Type (AKA named type)
     It can be declared from existing type (int,float,bool,string)
 
     eg : type Duration int64
@@ -33,7 +44,7 @@ GO is static type language
     Note: Use of defined type - as METHODs can only be attached with defined types
 
 
-4. Aliased Type
+5. Aliased Type
     - byte and uint8 are same type but different names
         type byte = uint8
     - rune and int32 are same type with different names
